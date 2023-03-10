@@ -6,7 +6,7 @@
 body {
   margin: 0;
   background-color: black;
-  color: azure;
+  color: rgb(86, 86, 86);
   font-family: Copperplate;
   overflow: hidden;
 }
