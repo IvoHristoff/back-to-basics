@@ -1,9 +1,10 @@
 window.addEventListener("DOMContentLoaded", () => {
   const main = document.getElementById("main");
   const clock = document.getElementById("clock");
+  const time = new Date();
   setInterval(() => {
-    const seconds = new Date();
-    clock.innerHTML = seconds.toLocaleString();
+    time.setSeconds(time.getSeconds() + 1);
+    clock.innerHTML = time.toLocaleString();
   }, 1000);
   main.style.height = `${screen.height}px`;
   window.addEventListener("resize", () => {
