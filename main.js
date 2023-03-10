@@ -4,7 +4,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const time = new Date();
   setInterval(() => {
     time.setSeconds(time.getSeconds() + 1);
-    clock.innerHTML = time.toLocaleString();
+    clock.innerHTML = time.toLocaleTimeString();
   }, 1000);
   main.style.height = `${screen.height}px`;
   window.addEventListener("resize", () => {
