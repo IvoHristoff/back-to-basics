@@ -21,3 +21,7 @@ var textElement = document.getElementById("text");
 fontSizeInput.addEventListener("input", function () {
   textElement.style.fontSize = fontSizeInput.value + "px";
 });
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("light-mode");
+}

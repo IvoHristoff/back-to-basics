@@ -7,5 +7,5 @@ Click button to show/hide date
 Click button day/night mode
 Time Zones Menu
 AM and PM On/Off button
-Changable font-size
+Changable font-size ✅
 Changable font-color ✅
