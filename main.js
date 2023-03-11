@@ -16,3 +16,8 @@ colorPicker.addEventListener("input", () => {
   const color = colorPicker.value;
   textToChange.style.color = color;
 });
+var fontSizeInput = document.getElementById("font-size");
+var textElement = document.getElementById("text");
+fontSizeInput.addEventListener("input", function () {
+  textElement.style.fontSize = fontSizeInput.value + "px";
+});
