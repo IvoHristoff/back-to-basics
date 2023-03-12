@@ -1,12 +1,7 @@
-#main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 body {
   margin: 0;
   background-color: black;
-  color:white;
+  color: white;
   font-size: 3rem;
   font-family: Copperplate;
   overflow: hidden;
@@ -15,6 +10,70 @@ body.white {
   background-color: white;
   color: black;
 }
+
+/* main */
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 200px);
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  height: 200px;
+  align-items: end;
+  justify-content: center;
+}
+
+.toggle-button {
+  width: 50px;
+  height: 22px;
+  position: relative;
+  display: block;
+  background: #3a3a3a;
+  border-radius: 100px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+.toggle-button:after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 0.2px;
+  left: 0.5px;
+  background: linear-gradient(180deg, #fafafa, #fffefe);
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+#darkmode-toggle:checked + .toggle-button {
+  background: #fffefe;
+}
+#darkmode-toggle:checked + .toggle-button:after {
+  left: 50px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #303030, #545353);
+}
+.toggle-button,
+.toggle-button:after {
+  transition: 0.3s;
+}
+.toggle-button:active:after {
+  width: 50px;
+}
+#darkmode-toggle {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+/* misc */
+
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -24,45 +83,6 @@ body.white {
   user-select: none;
 }
 
-label {
-  width: 50px;
-  height: 20px;
-  position: relative;
-  display: block;
-  background: #3a3a3a;
-  border-radius: 100px;
-  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
-    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
-  cursor: pointer;
-}
-label:after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 0.2px;
-  left: 0.5px;
-  background: linear-gradient(180deg, #fafafa, #fffefe);
-  border-radius: 180px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-}
-input:checked + label {
-  background: #fffefe;
-}
-input:checked + label:after {
-  left: 50px;
-  transform: translateX(-100%);
-  background: linear-gradient(180deg, #303030, #545353);
-}
-label,
-label:after {
-  transition: 0.3s;
-}
-label:active:after {
-  width: 50px;
-}
-/*input {
-  width: 0;
-  height: 0;
-  visibility: hidden;
+.inline {
+  display: flex;
 }

@@ -9,16 +9,20 @@
   </head>
   <body>
     <main id="main">
-      <input type="color" id="color-picker" />
-      <input type="range" id="font-size" min="12" max="72" value="16" />
       <div id="text-to-change">
-        <div id="text">
-          <h1 id="clock" class="noselect">Time is relative</h1>
-        </div>
+        <h1 id="clock" class="noselect">Time is relative</h1>
       </div>
-      <input type="checkbox" id="darkmode-toggle" onclick="switchColors()" />
-      <label for="darkmode-toggle"></label>
     </main>
+
+    <footer>
+      <div class="inline">
+        <input type="color" id="color-picker" />
+        <input type="range" id="font-size" min="24" max="108" value="20" />
+        <input type="checkbox" id="darkmode-toggle" onclick="switchColors()" />
+        <label class="toggle-button" for="darkmode-toggle"></label>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
   </body>
-  <script src="main.js"></script>
 </html>
