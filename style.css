@@ -19,7 +19,46 @@ body {
   -ms-user-select: none;
   user-select: none;
 }
-.light-mode {
-  background-color: white(255, 255, 255);
-  color: white;
+
+label {
+  width: 50px;
+  height: 20px;
+  position: relative;
+  display: block;
+  background: #3a3a3a;
+  border-radius: 100px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+label:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0.2px;
+  left: 0.5px;
+  background: linear-gradient(180deg, #fafafa, #fffefe);
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+input:checked + label {
+  background: #fffefe;
+}
+input:checked + label:after {
+  left: 50px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #303030, #545353);
+}
+label,
+label:after {
+  transition: 0.3s;
+}
+label:active:after {
+  width: 50px;
+}
+/*input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
 }
