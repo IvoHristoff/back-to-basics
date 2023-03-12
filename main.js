@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const textToChange = document.getElementById("text-to-change");
   const fontSizeInput = document.getElementById("font-size");
 
-  clock.style.fontSize = fontSizeInput.value;
+  clock.style.fontSize = fontSizeInput.value + "px";
 
   const time = new Date();
   clock.innerHTML = time.toLocaleTimeString([], { hour12: true });
@@ -22,7 +22,7 @@ window.addEventListener("DOMContentLoaded", () => {
     textToChange.style.color = color;
   });
 
-  fontSizeInput.addEventListener("input", function () {
+  fontSizeInput.addEventListener("input", () => {
     clock.style.fontSize = fontSizeInput.value + "px";
   });
 });
