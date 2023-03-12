@@ -1,14 +1,14 @@
 body {
   margin: 0;
   background-color: black;
-  color: white;
+  color: #eece98;
   font-size: 3rem;
   font-family: Copperplate;
   overflow: hidden;
 }
 body.white {
-  background-color: white;
-  color: black;
+  background-color: #eece98;
+  color: rgb(41, 40, 40);
 }
 
 /* main */
@@ -52,12 +52,12 @@ footer:hover {
   position: absolute;
   top: 0.2px;
   left: 0.5px;
-  background: linear-gradient(180deg, #fafafa, #fffefe);
+  background: linear-gradient(180deg, #eece98, #eece98);
   border-radius: 180px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 #darkmode-toggle:checked + .toggle-button {
-  background: #fffefe;
+  background: #eece98;
 }
 #darkmode-toggle:checked + .toggle-button:after {
   left: 50px;

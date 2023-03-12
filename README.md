@@ -1,6 +1,8 @@
 # clock-js
 
-> ### This is a clock made entirely with vannila javascript.
+> ## This is a clock made entirely with vannila javascript.
+
+# https://time-is-relative.web.app
 
 ## Possible things to add:
 
@@ -11,3 +13,4 @@
 - Changable font-size ✅
 - Changable font-color ✅
 - Hover down toggle for edit menu ✅
+- Remember last options
