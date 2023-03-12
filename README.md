@@ -1,6 +1,6 @@
 # clock-js
 
-> ### This is a clock made entirely with javascript.
+> ### This is a clock made entirely with vannila javascript.
 
 ## Possible things to add:
 
