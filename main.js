@@ -10,18 +10,21 @@ window.addEventListener("DOMContentLoaded", () => {
     main.style.height = `${screen.height}px`;
   });
 });
+
 const colorPicker = document.getElementById("color-picker");
 const textToChange = document.getElementById("text-to-change");
 colorPicker.addEventListener("input", () => {
   const color = colorPicker.value;
   textToChange.style.color = color;
 });
+
 var fontSizeInput = document.getElementById("font-size");
 var textElement = document.getElementById("text");
 fontSizeInput.addEventListener("input", function () {
   textElement.style.fontSize = fontSizeInput.value + "px";
 });
-function myFunction() {
-  var element = document.body;
-  element.classList.toggle("light-mode");
+
+function switchColors() {
+  var body = document.getElementsByTagName("body")[0];
+  body.classList.toggle("white");
 }
