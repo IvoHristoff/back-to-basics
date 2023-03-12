@@ -27,6 +27,11 @@ footer {
   height: 200px;
   align-items: end;
   justify-content: center;
+  transition: 500ms;
+}
+
+footer:hover {
+  transition: 500ms;
 }
 
 .toggle-button {
@@ -72,6 +77,10 @@ footer {
   visibility: hidden;
 }
 
+.footer-options {
+  margin-bottom: 20px;
+}
+
 /* misc */
 
 .noselect {
@@ -85,4 +94,17 @@ footer {
 
 .inline {
   display: flex;
+}
+
+.instruction-message {
+  text-align: center;
+  width: 200px;
+  position: absolute;
+  font-size: 24px;
+  right: calc(50% - 200px / 2);
+  transition: 500ms;
+}
+
+.instruction-message:hover {
+  transition: 500ms;
 }
