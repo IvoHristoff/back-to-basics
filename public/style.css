@@ -5,6 +5,7 @@ body {
   font-size: 3rem;
   font-family: Copperplate;
   overflow: hidden;
+  transition: background-color 0.5s;
 }
 body.white {
   background-color: #eece98;
