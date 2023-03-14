@@ -14,3 +14,7 @@
 - Changable font-color ✅
 - Hover down toggle for edit menu ✅
 - Remember last options
+
+> ##Screenshots
+> ![Screenshot](Images/darkmode.png)
+> ![Screenshot](Images/lightmode.png)
